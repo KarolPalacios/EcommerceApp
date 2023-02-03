@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const bcrypt = requie("bcrypt");
+const bcrypt = require("bcrypt");
 module.exports = (sequelize, DataTypes) => {
   return users.init(sequelize, DataTypes);
 }
