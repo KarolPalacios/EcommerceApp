@@ -7,8 +7,8 @@ const authMiddleware = (req, res, next) => {
   console.log(token);
 
   if(token) {
-    jwt.verify(token, process.env.JWT_SECRET, {algorithms: "HS512"}, (err, decoded) => {
-      if(err) {
+        jwt.verify(token, process.env.JWT_SECRET, {algorithms: "HS512"}, (err, decoded) => {
+    if(err) {
         res.status(498).json({error: "invalid token", message: "your token isn't valid, please send a valid token"});
       } else {
         console.log(decoded);

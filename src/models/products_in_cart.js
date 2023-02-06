@@ -19,6 +19,11 @@ module.exports = (sequelize, DataTypes) => {
  *         quantity:
  *           type: int
  *           example: 2
+ *   securitySchemes:
+ *     bearerAuth:
+ *       type: http
+ *       scheme: bearer
+ *       bearerFormat: JWT
  */
 
 class products_in_cart extends Sequelize.Model {
